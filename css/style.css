@@ -605,8 +605,19 @@ footer {
     }
 
     .newsletter-img {
-        width: 341px;
+        width: 380px;
         height: 353px;
+    }
+
+    .offer {
+        width: 216.023px;
+        height: 74.268px;
+    }
+
+    .offer h3 {
+        font-size: 1.4rem;
+        font-style: normal;
+        font-weight: 800;
     }
 
     .perfect-place-container,
