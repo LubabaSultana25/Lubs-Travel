@@ -32,7 +32,9 @@
 
 /* header related style */
 header {
-    margin: 50px 135px;
+    max-width: 1350px;
+    margin: auto;
+
 }
 
 nav {
@@ -155,7 +157,9 @@ nav li a {
 
 /* main related style */
 main {
-    margin: 50px 135px;
+    max-width: 1350px;
+    margin: auto;
+    /* border: 1px solid red; */
 }
 
 /* Popular Tours */
@@ -188,8 +192,40 @@ li {
 }
 
 /* destination */
+
 .destination-container {
-    margin-top: 100px;
+    text-align: center;
+    margin: 80px 0;
+}
+
+.tour-place-container {
+    margin: 10px auto;
+    display: grid;
+    gap: 24px;
+    justify-content: center;
+}
+
+.places {
+    display: flex;
+    gap: 24px;
+}
+
+.places div {
+    margin: 0;
+}
+
+.places img {
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(0deg, rgba(19, 19, 24, 0.20) 0%, rgba(19, 19, 24, 0.20) 100%), url(<path-to-image>), lightgray -101px -108.075px / 135.253% 172.05% no-repeat;
+}
+
+.tour-name-title {
+    color: #fff;
+    font-size: 1.75rem;
+    font-weight: 800;
+    position: relative;
+    top: -50%;
 }
 
 
@@ -264,21 +300,43 @@ li {
 
 
 /* perfect place */
+.perfect-place {
+    margin-top: 50px;
+}
+
 .perfect-place-container {
     display: grid;
-    gap: 3rem;
+    grid-template-columns: repeat(2, 3fr);
+    gap: 40px;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.perfect-place-container li {
+    color: #131318;
+    font-weight: 700;
+}
+
+.perfect-place details p {
+    color: #5A5A5D;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 26px;
 }
 
 .perfect-place-title {
     color: #131318;
-    font-size: 2.6rem;
+    font-size: 1.7rem;
     font-weight: 800;
-    line-height: 60px;
+
 }
 
-.perfect-palce-video video {
-    /* width: 510px; */
+.youtube-video {
+    width: 610px;
+    height: 424px;
+    border-radius: 12px;
 }
+
 
 
 /* Newsletter */
@@ -357,4 +415,50 @@ li {
     font-weight: 800;
     /* transform: rotate(-19.628deg); */
 
+}
+
+
+
+
+
+
+
+/* footer section */
+footer {
+    background: rgba(19, 19, 24, 0.05);
+    width: 100%;
+}
+
+.footer-container {
+    text-align: center;
+
+}
+
+.footer-container p {
+    color: #5A5A5D;
+    font-size: 1rem;
+    font-weight: 400;
+
+}
+
+.logo.logo-adjust {
+    padding: 20px;
+    justify-content: center;
+}
+
+.icons {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.footer-hr {
+    background: rgba(19, 19, 24, 0.10);
+    width: 50%;
+    margin: auto;
+
+}
+
+.footer-description {
+    padding-top: 20px;
+    padding-bottom: 30px;
 }
