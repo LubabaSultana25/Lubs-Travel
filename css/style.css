@@ -40,6 +40,7 @@ header {
 nav {
     display: flex;
     justify-content: space-between;
+    overflow: hidden;
 
 }
 
@@ -86,7 +87,13 @@ nav .active {
 }
 
 nav li a {
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
     text-decoration: none;
+    font-size: 17px;
+
 }
 
 .banner-container {
@@ -527,6 +534,15 @@ footer {
         flex-direction: column;
     }
 
+    .nav a:not(:first-child) {
+        display: none;
+    }
+
+    .nav a.icon {
+        float: right;
+        display: block;
+    }
+
     .banner-container {
         background-image: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%), url(../Images/banner.png);
         background-repeat: no-repeat;
@@ -550,13 +566,23 @@ footer {
         margin-bottom: 0.9rem;
     }
 
+    .form {
+        margin: 0;
+        display: flex;
+        width: 287px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+    }
+
+    .form-inline {
+        width: 95%;
+        height: 52px;
+    }
+
     main {
         padding: 24px;
     }
-
-    /* .newsletter-section {
-        grid-template-columns: repeat(1, 1fr);
-    } */
 
     .newsletter-img.offer {
         width: 100%;
@@ -573,17 +599,45 @@ footer {
         gap: 24px;
     }
 
-    .perfect-place-container {
+    .perfect-place-container,
+    .popular-tour-container {
         flex-direction: column;
         grid-template-columns: repeat(1, 3fr);
         gap: 40px;
     }
 
     .perfect-place-container li,
-    .popular-tour-content p,
-    li {
+    .popular-tour-content p li {
         color: #131318;
         font-weight: 700;
+    }
+
+    .popular-tour-content h3 {
+        color: #131318;
+        text-align: left;
+        font-size: 1.2rem;
+        font-weight: 800;
+    }
+
+    .popular-tour-content p {
+        color: rgba(19, 19, 24, 0.70);
+        font-size: .9rem;
+        font-style: normal;
+        font-weight: 400;
+        width: 335px;
+    }
+
+    .popular-tour-content li {
+        color: rgba(19, 19, 24, 0.70);
+        font-size: .9rem;
+        font-style: normal;
+        font-weight: 400;
+        width: 335px;
+    }
+
+    .popular-tour-image {
+        width: 335px !important;
+
     }
 
     .video {
