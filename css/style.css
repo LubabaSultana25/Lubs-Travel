@@ -164,6 +164,7 @@ main {
 
 /* Popular Tours */
 .popular-tour-container {
+    margin: 80px 0;
     display: flex;
     justify-content: space-between;
 }
@@ -280,23 +281,8 @@ li {
 }
 
 /* discount related style */
-.discount-images {
-    position: relative;
-}
+/* .deals-container {}
 
-.discount-images img {
-    width: 100%;
-}
-
-.discount-card {
-    position: absolute;
-    border-radius: 16px;
-    border: 2px solid #FFF;
-    background: rgba(255, 255, 255, 0.80);
-    backdrop-filter: blur(2.5px);
-    width: 579px;
-    height: 389px;
-}
 
 
 /* perfect place */
@@ -336,6 +322,50 @@ li {
     height: 424px;
     border-radius: 12px;
 }
+
+/* review style */
+.review-container {
+    margin-top: 60px;
+}
+
+.review-card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.4rem;
+    /* padding: 3rem; */
+}
+
+.review-card {
+    max-width: 450px;
+    border-radius: 16px;
+    padding: 3rem;
+    border: 1px solid rgba(251, 181, 99, 0.20);
+    background: rgba(251, 181, 99, 0.05);
+    box-shadow: 5px 5px 5px #FF5400;
+}
+
+.review-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.review-card h3 {
+    color: #131318;
+    font-size: 1.5rem;
+    font-weight: 800;
+
+}
+
+.review-card p {
+    color: #5A5A5D;
+    padding: 10px 0;
+    font-size: 1rem;
+    font-weight: 400;
+
+}
+
+
 
 
 
