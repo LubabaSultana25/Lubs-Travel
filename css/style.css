@@ -232,20 +232,19 @@ li {
 
 /* choose us */
 .choose-us-card-column {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
-    justify-content: space-evenly;
 }
 
 .choose-us-card {
-    width: 730px;
     border-radius: 16px;
     border: 1px solid rgba(251, 181, 99, 0.20);
     background: rgba(251, 181, 99, 0.05);
     padding: 30px;
 }
 
-.choose-us-card .card {
+.choose-us-card.card {
     border-radius: 16px;
     border: 1px solid rgba(41, 206, 246, 0.20);
     background: rgba(41, 206, 246, 0.05);
@@ -269,6 +268,23 @@ li {
 }
 
 .choose-us-card-row {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+    grid-auto-flow: column;
+
+}
+
+.choose-us-card-N {
+    margin-top: 1.8rem;
+    place-self: center;
+    border-radius: 16px;
+    border: 1px solid rgba(251, 181, 99, 0.20);
+    background: rgba(251, 181, 99, 0.05);
+    padding: 30px;
+}
+
+/* .choose-us-card-row {
     justify-items: center;
     align-content: center;
     margin-top: 20px;
@@ -278,7 +294,7 @@ li {
     border: 1px solid rgba(233, 68, 68, 0.20);
     background: rgba(233, 68, 68, 0.05);
     padding: 30px;
-}
+} */
 
 /* discount related style */
 /* .deals-container {}
